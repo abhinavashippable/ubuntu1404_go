@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     make \
     mercurial;
 
-RUN curl -s -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash;
+RUN export HOME=/root && curl -s -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash;
 
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.1";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.2";
