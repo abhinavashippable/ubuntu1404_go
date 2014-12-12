@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     gcc \
     make \
-    mercurial;
+    mercurial\
+    bzr;
 
 RUN export HOME=/root && curl -s -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash;
 
