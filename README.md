@@ -1,13 +1,14 @@
 ubuntu1404_go
 =============
 
-Shippable CI image for Go on Ubuntu 14.04. Available go versions:
+Shippable CI image for Go on Ubuntu 14.04. Available go versions (as seen in the [Dockerfile](Dockerfile)
 
 1. 1.1
 2. 1.2
 3. 1.3
-4. tip
-5. release
+4. 1.4
+5. tip
+6. release
 
 ## How to use
 You can use this image to run go builds on Shippable. Add build_image tag to your shippable.yml file and activate gvm in before_install section to run your build against the correct version of go.  Here's a sample YML file to get you going:
@@ -18,6 +19,7 @@ go:
   - 1.1
   - 1.2
   - 1.3
+  - 1.4
   - tip
   - release
 
